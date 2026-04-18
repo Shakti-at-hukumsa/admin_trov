@@ -64,7 +64,7 @@ export default function Header({ sidebarOpen, onSidebarToggle }: HeaderProps) {
               <div className="absolute right-0 mt-2 w-48 bg-card border border-border rounded-md shadow-lg z-50">
                 <button
                   onClick={() => {
-                    router.push('/admin/users/create')
+                    router.push('/users/create')
                     setShowCreateDropdown(false)
                   }}
                   className="w-full text-left px-4 py-2 text-sm hover:bg-muted transition-colors"
@@ -73,7 +73,7 @@ export default function Header({ sidebarOpen, onSidebarToggle }: HeaderProps) {
                 </button>
                 <button
                   onClick={() => {
-                    router.push('/admin/agents/create')
+                    router.push('/agents/create')
                     setShowCreateDropdown(false)
                   }}
                   className="w-full text-left px-4 py-2 text-sm hover:bg-muted transition-colors"

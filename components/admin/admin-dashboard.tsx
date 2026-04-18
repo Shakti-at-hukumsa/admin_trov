@@ -15,8 +15,8 @@ import AgentProfile from "./agent-profile"
 import TripOverview from "./trip-overview"
 import Payments from "./payments"
 import Support from "./support"
-
-import { ActiveTab } from "@/app/admin/layout"
+ 
+type ActiveTab = "dashboard" | "users" | "agents" | "trips" | "bookings" | "approvals" | "notifications" | "payments" | "user-profile" | "agent-profile" | "trip-overview" | "trip-overview-agent" | "support";
 
 export default function AdminDashboard() {
   const [sidebarOpen, setSidebarOpen] = useState(true)
